@@ -105,6 +105,10 @@ docker run -p 8080:8080 s533-trilha-auditoria-servico:latest
 - `GET /api/actuator/health`: Verificação de saúde da aplicação
 - `GET /api/actuator/info`: Informações sobre a aplicação
 
+## Cliente de simulação
+
+Este repositório inclui o projeto [`trilha-auditoria-client`](trilha-auditoria-client/README.md), uma API Spring Boot separada (Java 21) que consome a Trilha Auditoria Serviço por REST. Ela pode ser executada de forma independente com `mvn spring-boot:run` dentro do diretório do cliente e expõe os endpoints `/api/v1/client/trilhas` para publicar e consultar trilhas na API original.
+
 
 
 Este projeto inclui um Jenkinsfile configurado para:
