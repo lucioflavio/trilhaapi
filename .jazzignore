@@ -1,0 +1,43 @@
+### Jazz Ignore 0
+# Os arquivos e pastas ignorados não serão consolidados, mas podem ser modificados durante a 
+# aceitação ou atualização.
+# - As propriedades para ignorar devem conter uma lista separada por espaço de padrões de nomes de arquivos.
+# - Cada padrão faz distinção entre maiúsculas e minúsculas e está entre chaves ('{' e '}'). 
+# - "*" corresponde a zero ou mais caracteres.  
+# - "?" corresponde a um único caractere.  
+# - A lista de padrões pode ser dividida entre linhas finalizando a linha com uma 
+#     barra invertida e iniciando a próxima linha usando a tecla tab. 
+# - Os padrões em core.ignore evitam que recursos correspondentes no mesmo 
+#     diretório sejam confirmados.  
+# - Os padrões em core.ignore.recursive evitam que recursos correspondentes no diretório 
+#     atual e em todos os subdiretórios sejam confirmados.  
+# - O valor padrão de core.ignore.recursive é *.class 
+# - O valor padrão para core.ignore é bin 
+# 
+# Para ignorar shell scripts e arquivos ocultos nessa subárvore: 
+#     por exemplo: core.ignore.recursive = {*.sh} {\.*} 
+# 
+# Para ignorar recursos denominados 'bin' no diretório atual (mas permiti-los 
+#  em qualquer subdiretório abaixo): 
+#     por exemplo: core.ignore = {bin} 
+# 
+# NOTA: a modificação dos arquivos a serem ignorados não alterará o status ignorar dos 
+#     recursos derivados do Eclipse.
+
+core.ignore.recursive= \
+	{*.class} \
+	{.idea} \
+	{target} 
+
+core.ignore= \
+	{.apt_generated} \
+	{.apt_generated_tests} \
+	{.classpath} \
+	{.factorypath} \
+	{.git} \
+	{.gitignore} \
+	{.project} \
+	{.settings} \
+	{.vscode} \
+	{bin} \
+	{pom.xml.versionsBackup} 
