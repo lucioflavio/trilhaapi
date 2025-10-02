@@ -1,0 +1,10 @@
+{
+    "realm": "Desenv",
+    "auth-server-url": "https://sso.dreads.bnb/auth/",
+    "ssl-required": "external",
+    "resource": "s533-trilhaauditoria-api",
+    "credentials": {
+        "secret": "Dt2B8TWZVc0pelEBhRayepgfFm5lo5Wz"
+    },
+    "confidential-port": 0
+}
